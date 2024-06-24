@@ -45,15 +45,15 @@ export default function Heading(){
 
     <div className="navbarr">  
     <ul>
-        <li> <a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
-        <li> <a href="#" target="_blank" rel="noopener noreferrer">About</a></li>
-        <li> <a href="#" target="_blank" rel="noopener noreferrer">Services</a></li>
-        <li> <a href="#" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li> <a href="#contact">Contact</a></li>
     </ul>
     </div>
     </nav>
    <div className="wrap">
-    <div className="intro">
+    <div id="home" className="intro">
         <h1 className="slogan-h1">
         Helping You Achieve Your Ultimate Success!
         </h1>
@@ -73,7 +73,7 @@ export default function Heading(){
         Become a Tutor
     </button>
    </div>
-   <div className="about-page">
+   <div id="about" className="about-page">
         <div className="intro-about">
       <h1 className="about-h1">Unlock Your Potential with Lessons You Won't Want to Miss</h1>
       <p className="about-p">Imagine a service where you can get expert tutoring anytime, anywhere. EduApply is here to make your learning experience enriching and successful. Join us to master any subject with confidence.</p>
@@ -203,9 +203,12 @@ export default function Heading(){
             <div className="icon-review "> <div className="profile-name"> <div className="pic-name"><img src={bw5Image} className=" review-img d-none d-md-block d-lg-block d-xl-block" alt="logo"/> <h1>Lebo Mahosa</h1> </div> <div className="fb"> <span><FaFacebookSquare /> </span></div> </div>  <p className="date">November 30, 2020</p><p className="star-reviews"><span className="review-stars"><RiStarSFill /> </span><span className="review-stars"><RiStarSFill /> </span><span className="review-stars"><RiStarSFill /> </span><span className="review-stars"><RiStarSFill /> </span><span className="review-stars"><RiStarSFill /> </span></p> <p className="review-message">EduApply is so excellent that I've been recruiting my loved ones to use their services. My child has benefited greatly from their tutoring, and next year, for Grade 12, we'll be using their application and tutoring services again. Highly recommend them for their comprehensive support and expertise!</p></div>
         </div>
         </div>
-        <a href="#" className="seeMore-link" target="_blank" rel="noopener noreferrer">See more...</a>
         </div>
-  
+  <div className="contact-page" id="contact">
+    <h1>
+        Contact Us
+    </h1>
+  </div>
         </div>
    
  
