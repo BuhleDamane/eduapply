@@ -18,6 +18,8 @@ import { LuPackageOpen } from "react-icons/lu";
 import { FaFacebookSquare } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import"./../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import logoImage from './image.js/logo2.png'
 import coverImage from './image.js/cover 2.png'
@@ -31,7 +33,8 @@ import ww2Image from './image.js/2 white woman.jpg'
 import wmImage from './image.js/white man.jpg'
 import bw6Image from './image.js/6 black woman.jpg'
 import bw5Image from './image.js/5 black woman.jpg'
-
+import lbImage from './image.js/bottom logo.png'
+import mapImage from './image.js/south african map.jpg'
 export default function Heading(){
     return(
 <div className="containa">
@@ -204,9 +207,84 @@ export default function Heading(){
         </div>
         </div>
   <div className="contact-page" id="contact">
-    <h1>
-        Contact Us
-    </h1>
+    <div className="middle-footer">
+        <div className="bottom-logo">
+        <img src={lbImage} className="lb d-none d-md-block d-lg-block d-xl-block" alt="logo"/>
+        </div>
+        <div className="container">
+        <div className="row middle-middle-bottom">
+            <div className="col-3">
+                <h3>About us</h3>
+                <ul>
+                <li> <a href="#services">Who we are</a></li>
+                <li> <a href="#contact">Where to find us</a></li>
+                <li> <a href="#services">Meet our team</a></li>
+                <li> <a href="#contact">Sustainability</a></li>
+                <li> <a href="#services">Insights & News</a></li>
+                </ul>
+            </div>
+            <div className="col-3">
+            <h3>Services</h3>
+                <ul>
+                <li> <a href="#services">Online Tutoring Services</a></li>
+                <li> <a href="#contact">Application Services</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                </ul> 
+            </div>
+             <div className="col-3">
+             <h3>Our Work</h3>
+                <ul>
+                <li> <a href="#services">Reviews</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+             </div>
+             <div className="col-3">
+             <h3>Other</h3>
+                <ul>
+                <li> <a href="#services">EduApply Careers</a></li>
+                <li> <a href="#contact">Employee Space</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+             </div>
+        </div>
+        </div>
+        <div className="map">
+        <img src={mapImage} className="map d-none d-md-block d-lg-block d-xl-block" alt="logo"/>
+        </div>
+    </div>
+    <div className="bottom-footer">
+        <div className="TsCs">
+            <ul>
+        <li> <a href="#home">EduApply Policies</a></li>
+        <span>|</span>
+        <li> <a href="#about">Terms of use</a></li>
+        <span>|</span>
+        <li> <a href="#services">Privacy statement</a></li>
+        <span>|</span> 
+        <li> <a href="#contact">Cookie statement</a></li>
+        <span>|</span>
+        <li> <a href="#services">Privacy preferance</a></li>
+        <span>|</span>
+        <li> <a href="#contact">Modern Slavery statement</a></li>
+    </ul>
+    </div>
+        <div className="social-links">
+            <ul>
+        <li> <a href="#home"><FaLinkedin /></a></li>
+        <li> <a href="#about"><FaFacebookSquare /></a></li>
+        <li> <a href="#services"><FaInstagramSquare /></a></li>
+        <li> <a href="#contact"><FaSquareXTwitter /> </a></li>
+    </ul>
+    </div>
+    </div>
   </div>
         </div>
    
