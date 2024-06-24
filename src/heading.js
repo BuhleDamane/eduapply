@@ -1,6 +1,5 @@
 import React from "react";
 import './App.css';
-import { IconName } from "react-icons/bs";
 import { FaBookOpen } from "react-icons/fa";
 import { FaBookDead } from "react-icons/fa";
 import { MdScience } from "react-icons/md";
