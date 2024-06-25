@@ -94,24 +94,24 @@ z-index: 1;
     content: '';
     position: absolute;
     border-radius: 50%;
-    width: 56%; 
-    height: 73%; 
+    width: 58%; 
+    height: 82%; 
     box-sizing: border-box;
 }
 
 
 .image:before {
-    top: 295px;
-    right: 20px;
+    top: 298px;
+    right: 40px;
     clip: rect(0, 520px, 220px, 0);
     border: 10px dotted gold;
-    transform: translate(-20%, -50%) rotate(69deg);
+    transform: translate(-18%, -49%) rotate(70deg);
 }
 
 
 .image:after {
-    bottom: -165px;
-    left: 210px;
+    bottom: -205px;
+    left: 228px;
     clip: rect(0, 520px, 220px, 0);
     border: 10px dotted purple; 
     transform: translate(-12%, -50%) rotate(250deg);
@@ -537,7 +537,7 @@ li{
 .bottom-footer{
   display: flex;
   justify-content: space-between;
-  background-color: rgb(4, 4, 72);
+  background-color: rgb(3, 3, 42);
 }
 .TsCs{
   display: flex;
@@ -570,37 +570,173 @@ li{
   list-style: none;
   margin: 1px 5px;
 }
-nav ul{
-  margin-top: -105px;
-  font-size: 21px;
-}
 .middle-footer{
   display: flex;
  justify-content: space-evenly;
  margin: 50px 0 0 0;
  text-decoration: none;
+ background-color: rgb(4, 4, 72);
+ 
 }
-h3{
-  font-size: 10px;
+.middle-middle-bottom h3{
+  font-size: 25px;
+  margin-top: 40px;
+  color: darkgray;
+  font-family: "Playfair Display", serif;
 }
-.middle-footer ul li{
-  color: #fff;
+.middle-footer li{
+  color: rgb(4, 4, 72);
   content: '';
   margin-right: 10px;
  text-decoration: none;
+ 
+}
+.middle-middle-bottom ul li a{
+text-decoration: none;
+font-size: 15px;
+margin-left: -24px;
+}
+.middle-middle-bottom ul li a:hover{
+  text-decoration: underline;
 }
 .lb{
   width: 250px;
   height: 300px;
+  margin-top: 15px;
+
 }
 .map{
   width: 250px;
   height: 250px;
   margin-right: 40px;
+  margin-top: 15px;
+  border-radius: 6px;
 }
 .middle-middle-bottom{
   display: flex;
   justify-content: center;
   align-items: center;
   
+}
+.copyright{
+  text-align: center;
+  background-color: rgb(2, 2, 29);
+  height: 36px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.heart{
+  color: gold;
+}
+.contact-left{
+  flex-basis: 35%;
+  margin-top: 70px;
+}
+.contact-left h4{
+  margin-top: 55px;
+  font-size: 35px;
+  color: darkgray;
+  font-family: "Playfair Display", serif;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 20px;
+}
+.top-footer h1{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.social-links a{
+  text-decoration: none;
+  margin-right: 15px;
+  color: gold;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-links a:hover{
+  color: purple;
+  transform: translateY(-5px);
+}
+.btn.btn2{
+  display: inline-block;
+  background: purple;
+  color:#fff;
+  font-family: "poppins", sans-serif;
+}
+.btn.btn2:hover{
+  background-color: rgb(240, 207, 22);
+}
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+width: 100%;
+border: 0;
+outline: none;
+background-color: rgb(4, 4, 72);
+padding: 15px;
+margin: 10px 0;
+color: darkgray;
+font-size: 18px;
+border-radius: 6px;
+font-family: "poppins", sans-serif;
+}
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+.contact-icons{
+  font-size: 20px;
+  color: purple;
+}
+.contact-left p{
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 575.98px) {
+  
+  .example {
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+  .example {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  
+  .example {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+  .example {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  
+  .example {
+    font-size: 20px;
+  }
 }
