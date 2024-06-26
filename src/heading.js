@@ -26,6 +26,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import { FaTimeline } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import { BsDashLg } from "react-icons/bs";
+import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 import"./../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import logoImage from './image.js/logo2.png'
 import coverImage from './image.js/cover 2.png'
@@ -57,7 +59,10 @@ export default function Heading(){
         <li> <a href="#about">About</a></li>
         <li> <a href="#services">Services</a></li>
         <li> <a href="#contact">Contact</a></li>
+        <span className="cross"><ImCross /></span>
     </ul>
+    <span className="bars"><FaBars /> </span>
+
     </div>
     </nav>
    <div className="wrap">
@@ -250,7 +255,7 @@ export default function Heading(){
 </div>
     <div className="middle-footer">
         <div className="bottom-logo">
-        <img src={lbImage} className="lb d-none d-md-block d-lg-block d-xl-block" alt="logo"/>
+        <img src={lbImage} className="lb d-none d-md-block d-lg-block d-xl-block" alt="logo" />
         </div>
         <div className="container">
         <div className="row middle-middle-bottom">

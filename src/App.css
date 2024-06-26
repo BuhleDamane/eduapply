@@ -702,41 +702,94 @@ form .btn2{
   font-weight: 400;
 }
 
-@media (max-width: 575.98px) {
-  
-  .example {
-    font-size: 12px;
+/* app.css */
+
+nav span{
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .slogan-h1{
+    font-size: 40px;
+
+  }
+  nav span{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background-color: blue;
+    top: 0;
+    right: -200px;
+    position: fixed;
+    width: 200px;
+    height: 400px;
+    padding-top: 170px;
+    font-size: 17px;
+  }
+  nav ul li{
+    display: block;
+    margin: 10px;
+  }
+
+  nav ul .cross{
+    position: absolute;
+    top: 160px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: gold;
+  }
+  nav .bars{
+    top: 2px;
+    left: 1030px;
+    position: absolute;
+    font-size: 30px;
+  }
+ .image::before{
+  display: none;
+ }
+ .image::after{
+  display: none;
+ }
+ .buttons{
+  display: flex;
+ }
+}
+
+/* Small (s) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .about-h1{
+    font-size: 94px;
+    color: blue; /* Added for visual debugging */
   }
 }
 
-
-@media (min-width: 576px) and (max-width: 767.98px) {
- 
-  .example {
-    font-size: 14px;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  
+/* Medium (m) */
+@media screen and(min-width: 768px) and (max-width: 992px) {
   .example {
     font-size: 16px;
+    color: green; /* Added for visual debugging */
   }
 }
 
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  
+/* Large (l) */
+@media screen and(min-width: 992px) and (max-width: 1200px) {
   .example {
     font-size: 18px;
+    color: orange; /* Added for visual debugging */
   }
 }
 
-
-@media (min-width: 1200px) {
-  
-  .example {
-    font-size: 20px;
+/* Extra Large (xl) */
+@media screen and(min-width: 1200px) {
+  h1{
+    font-size: 16px;
+    color: purple; /* Added for visual debugging */
   }
+}
+
+/* Default styles */
+.example {
+  font-size: 16px;
+  color: black; /* Default color for visual debugging */
 }
