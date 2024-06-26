@@ -775,8 +775,8 @@ nav span{
   overflow: hidden;
 }
  .icon {
-  width: 250px;
-  height: 130px;
+  width: 230px;
+  height: 110px;
   border: 1px solid #ccc;
   border-radius: 10px;
   margin-right: 30px;
@@ -797,41 +797,41 @@ nav span{
 .eng .icons{
   margin-left: 120px;
   margin-top: -70px;
-  font-size: 60px;
+  font-size: 50px;
 }
 .physics .icons{
   margin-left: 150px;
   margin-top: -100px;
-  font-size: 60px;
+  font-size: 50px;
   color: orangered;
 }
 .maths-lit .icons{
   margin-left: 130px;
   margin-top: -60px;
-  font-size: 60px;
+  font-size: 50px;
   color: blue;
 }
 .maths .icons{
   color: blue;
   margin-left: 120px;
   margin-top: -60px;
-  font-size: 60px;
+  font-size: 50px;
 }
 .hist .icons{
   color: brown;
   margin-left: 140px;
   margin-top: -60px;
-  font-size: 60px;
+  font-size: 50px;
 }
 .ls .icons{
   color: green;
-  font-size: 60px;
+  font-size: 50px;
   margin-left: 130px;
-  margin-top: -60px; 
+  margin-top: -50px; 
 }
 .acc .icons{
   color: brown;
-  font-size: 60px;
+  font-size: 50px;
   margin-left: 130px;
   margin-top: -60px; 
 }
@@ -839,25 +839,45 @@ nav span{
   color: red;
   font-size: 60px;
   margin-left: 130px;
-  margin-top: -60px; 
+  margin-top: -50px; 
 
 }
 .geo .icons{
   color: rgb(82, 82, 204);
-  font-size: 60px;
+  font-size: 50px;
   margin-left: 130px;
   margin-top: -60px; 
 }
+.about-h1{
+  font-size: 22px;
+}
+.about-p{
+  font-size: 10px;
+}
 .about-image{
-  margin-top: -180px;
-  width: 300px;
-  height: 200px;
+  margin-top: -130px;
+  width: 330px;
+  height: 300px;
 }
 .tutoring{
-  margin-top: 300px;
-  margin-left: -300px;
+  margin-top: 200px;
+  margin-left: -350px;
 }
-
+.tutoring h1{
+  font-size: 20px;
+  text-align: center;
+}
+.tutoring p{
+  font-size: 10px;
+}
+.applying-btn{
+  width: 130px;
+  height: 40px;
+}
+.tutoring-btn{
+  width: 130px;
+  height: 40px;
+}
 }
 
 /* Small (s) */
