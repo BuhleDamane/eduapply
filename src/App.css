@@ -76,13 +76,6 @@ nav ul{
   color: darkgray;
   font-family: "Poppins", sans-serif;
 } 
-.cover{
-  width: 750px;
-  height: 550px;
-  padding: 60px 0 0 0;
-display: block;
-z-index: 1;
-}
 .image{
   position: relative;
   display: block;
@@ -99,7 +92,6 @@ z-index: 1;
     box-sizing: border-box;
 }
 
-
 .image:before {
     top: 298px;
     right: 40px;
@@ -108,7 +100,6 @@ z-index: 1;
     transform: translate(-18%, -49%) rotate(70deg);
 }
 
-
 .image:after {
     bottom: -205px;
     left: 228px;
@@ -116,6 +107,14 @@ z-index: 1;
     border: 10px dotted purple; 
     transform: translate(-12%, -50%) rotate(250deg);
 }
+.cover{
+  width: 750px;
+  height: 550px;
+  padding: 60px 0 0 0;
+display: block;
+z-index: 1;
+}
+
 .buttons{
   margin: 60px;
   margin-top: -100px;
@@ -142,6 +141,7 @@ z-index: 1;
   border-radius: 10px;
   font-family: "Playfair Display", serif;
 }
+
 .about-page{
   background-color: rgb(4, 4, 72);
   margin-top: 160px;
@@ -200,6 +200,9 @@ z-index: 1;
   margin-top: -90px;
   font-size: 80px;
 }
+.hist .icons{
+  color: brown;
+}
 .physics .icons{
   margin-left: 200px;
   margin-top: -140px;
@@ -215,21 +218,20 @@ z-index: 1;
 .maths .icons{
   color: blue;
 }
-.hist .icons{
+.geo .icons{
+  color: rgb(82, 82, 204);
+}
+.acc .icons{
   color: brown;
 }
 .ls .icons{
   color: green;
 }
-.acc .icons{
-  color: brown;
-}
+
 .agric .icons{
   color: red;
 }
-.geo .icons{
-  color: rgb(82, 82, 204);
-}
+
 @keyframes moveTrain {
   from {
       left: 100%;
@@ -238,15 +240,22 @@ z-index: 1;
       left: -100%;
   }
 }
+
+.about-2{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px 10px 20px;
+}
 .about-image{
   width: 500px;
   height: 600px;
  margin-top: -30px;
 }
-.about-2{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 10px 10px 20px;
+.tutoring ul li {
+  list-style: none;
+}
+li{
+  padding: 5px 0 0 0;
 }
 .tutoring-1{
   font-family: "Playfair Display", serif;
@@ -257,19 +266,14 @@ z-index: 1;
   font-family: "poppins", sans-serif;
   margin: 20px;
 }
-.tutoring ul li {
-  list-style: none;
-}
-li{
-  padding: 5px 0 0 0;
+.mark-gold{
+  color: gold;
 }
 .tutoring-2{
   color: purple;
   font-family: "Playfair Display", serif;
 }
-.mark-gold{
-  color: gold;
-}
+
 .mark-purple{
   color: purple;
 }
@@ -708,10 +712,18 @@ nav span{
   display: none;
 }
 @media screen and (max-width: 576px) {
-  .slogan-h1{
-    font-size: 40px;
-
+ 
+  .info{
+    font-size: 25px;
+    margin-left: 5px;
   }
+  .logo{
+    margin-left: -40px;
+    width: 230px;
+    height: 180px;
+    margin-top: -20px;
+  }
+ 
   nav span{
     display: block;
     font-size: 25px;
@@ -719,9 +731,9 @@ nav span{
   nav ul{
     background-color: blue;
     top: 0;
-    right: -200px;
+    right: -190px;
     position: fixed;
-    width: 200px;
+    width: 190px;
     height: 400px;
     padding-top: 170px;
     font-size: 17px;
@@ -740,20 +752,56 @@ nav span{
     color: gold;
   }
   nav .bars{
-    top: 2px;
-    left: 1030px;
+    top: 7px;
+    left: 310px;
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
+    color: #fff;
   }
+  .slogan-h1{
+    font-size: 40px;
+
+  }
+  .slogan-p{
+    font-size: 11px;
+  }
+  .butt1{
+    margin: 10px 20px;
+    background-color: gold;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 195px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+  }
+  .butt2{
+    margin: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 195px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+  }
+  .buttons{
+    margin: 30px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-evenly;
+   }
  .image::before{
   display: none;
  }
  .image::after{
   display: none;
  }
- .buttons{
-  display: flex;
- }
+
 
  .rotate{
   height: 200px;
@@ -862,11 +910,16 @@ nav span{
 .tutoring{
   margin-top: 200px;
   margin-left: -350px;
+  width: 90%;
 }
 .tutoring h1{
   font-size: 20px;
   text-align: center;
 }
+.name{
+  width: 100px;
+}
+
 .tutoring p{
   font-size: 10px;
 }
@@ -878,6 +931,188 @@ nav span{
   width: 130px;
   height: 40px;
 }
+.sub-title{
+  font-size: 40px;
+}
+.tutoring-list{
+  font-size: 30px;
+}
+.serv{
+  font-size: 10px;
+}
+.services-list .h2{
+  font-size: 15px;
+}
+.applying-list{
+  font-size: 30px;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+.services-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+.services-list div span{
+  font-size: 40px;
+ 
+}
+.tut-p{
+  font-size: 12px;
+}
+.tutor{
+  background-color: gold;
+  color: #fff;
+  width: 160px;
+  height: 55px;
+  border-radius: 2px;
+  box-shadow: 0 5px 5px rgb(147, 126, 10);
+  border: rgba(40, 35, 10, 0.744);
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.app-p{
+  font-size: 12px;
+}
+.apply{
+  background-color: purple;
+  color: #fff;
+  width: 160px;
+  height: 55px;
+  box-shadow: 0 5px 5px purple;
+  border: rgba(128, 0, 128, 0.216);
+  border-radius: 2px;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+}
+.reviews{
+  background-color: rgb(4, 4, 72);
+}
+.rotate-review{
+  background-color: red;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+  background-color: #ffffff00;
+  border: 2px solid #cccccc00;
+  position: relative;
+}
+
+.train-review {
+  display: flex;
+  position: absolute;
+  left: 100%;
+  animation: moveTrain 120s linear infinite;
+  overflow: hidden;
+}
+
+.icon-review {
+  width: 280px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 30px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 10px;
+}
+
+.icons{
+  margin-left: 200px;
+  margin-top: -90px;
+  font-size: 80px;
+}
+.profile-name{
+  display: flex;
+}
+.pic-name{
+  display: flex;
+  justify-content: space-around;
+}
+.pic-name h1{
+  font-size: 23px;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 1;
+  color: #000;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+}
+.date{
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  color: darkgray;
+  padding: 0 73px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.date-zee{
+  margin-top: -25px;
+  padding: 0 90px;
+}
+.review-stars{
+  color: gold;
+  font-size: 22px;
+  
+}
+.star-reviews{
+  line-height: 0.1;
+  margin-top: -15px;
+}
+.review-img{
+  width: 65px;
+  height: 50px;
+ border-radius: 50%;
+}
+.fb{
+  font-size: 35px;
+  color: #1877F2;
+}
+.insta{
+  font-size: 35px;
+  color:  #833AB4;
+}
+.review-message{
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+.review-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding: 25px 0 0 0;
+}
+.review-p{
+  color: rgb(133, 129, 129);
+  font-family: "poppins", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.about-page{
+  background-color: rgb(4, 4, 72);
+  margin-top: 160px;
+}
 }
 
 /* Small (s) */
@@ -886,6 +1121,7 @@ nav span{
     font-size: 94px;
     color: blue; /* Added for visual debugging */
   }
+
 }
 
 /* Medium (m) */
