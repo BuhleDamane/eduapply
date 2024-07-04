@@ -137,7 +137,7 @@ export default function Heading(){
 </div>
         </div>
 
-        
+
         <div className="services-page" id="services">
         <div className="container">
         <h1 className="sub-title" >Our Services </h1>
@@ -230,8 +230,8 @@ export default function Heading(){
        <div class="row">
         <div class="col contact-left">
 <h4>Let us be of service to you!</h4>
-<p><span className="contact-icons"><FaPaperPlane /></span>  ziziphodamane@gmail.com</p>
-<p><span className="contact-icons"><FaPhoneAlt /></span>  (+27) 83 483 1795</p>
+<p><span className="contact-icons"><FaPaperPlane /></span>  info@eduapply.co.za</p>
+<p><span className="contact-icons"><FaPhoneAlt /></span>  (+27) 00 000 000</p>
 <p> 
 <span className="contact-icons"><FaTimeline /></span>  Lines are open:
 <div>
@@ -240,7 +240,7 @@ export default function Heading(){
       <span><BsDashLg /></span> Saturday & Sunday : 09:00 - 16:00
     </div> 
 </p>
-<p> <span className="contact-icons"><FaHome /></span> 5th Street Atrium on 5th 9th Floor Sandton 2196, South Africa</p>
+<p> <span className="contact-icons"><FaHome /></span> 5th Street Pastrium on 5th 9th Floor Sandton 2001, South Africa</p>
 
 
         </div>
