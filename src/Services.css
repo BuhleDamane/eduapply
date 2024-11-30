@@ -1,0 +1,254 @@
+#services{
+    padding: 30px 0;
+  }
+  .sub-title{
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    font-family: "Playfair Display", serif;
+    position: relative;
+  }
+  .sub-title::after{
+    content: '';
+    width: 100%;
+    width: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: #ff00f4;
+  }
+  .tutoring-list{
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+    color: rgb(4, 4, 72);
+  }
+  .tutoring-list{
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+    color: rgb(4, 4, 72);
+  }
+  .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+  }
+  .services-list div span{
+    font-size: 50px;
+   
+  }
+  .services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .span-icon{
+    margin-bottom: 30px;
+   margin: 0 auto;
+   
+  }
+  .serv{
+    color: gold;
+  }
+  
+  .app{
+    color: purple;
+  }
+  .tut-p{
+    color: darkgray;
+    font-family: "poppins", sans-serif;
+  }
+  .pp-tutor{
+    color: gold;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .tutor{
+    background-color: gold;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    border-radius: 2px;
+    box-shadow: 0 5px 5px rgb(147, 126, 10);
+    border: rgba(40, 35, 10, 0.744);
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+  }
+  .applying-list{
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+    margin-top: 30px;
+    color: rgb(4, 4, 72);
+  }
+  
+  .apply{
+    background-color: purple;
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    box-shadow: 0 5px 5px purple;
+    border: rgba(128, 0, 128, 0.216);
+    border-radius: 2px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .app-p{
+    color: darkgray;
+    font-family: "poppins", sans-serif;
+  }
+  
+  
+  .pp-apply{
+    color: purple;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  @media (max-width: 480px) { 
+    #services{
+        padding: 30px 0;
+      }
+      .sub-title{
+        font-size: 40px;
+        text-align: center;
+        color: blue;
+        font-family: "Playfair Display", serif;
+        position: relative;
+      }
+      .sub-title::after{
+        content: '';
+        width: 100%;
+        width: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background: #ff00f4;
+      }
+      .tutoring-list{
+        font-size: 45px;
+        font-family: "Playfair Display", serif;
+        margin-top: 10px;
+        color: rgb(4, 4, 72);
+      }
+      .container .sub-title{
+        font-size: 40px;
+      
+      }
+      .container .tutoring-list{
+        font-size: 30px;
+        text-align: center;
+      }
+      .tutoring-list{
+        font-size: 45px;
+        font-family: "Playfair Display", serif;
+        margin-top: 10px;
+        color: rgb(4, 4, 72);
+      }
+      .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+      }
+      
+      .services-list div{
+        background: #262626;
+        padding: 40px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        font-family: "Playfair Display", serif;
+      }
+      .services-list div span{
+        font-size: 40px;
+       
+      }
+      .services-list div h2{
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .span-icon{
+        margin-bottom: 30px;
+       margin: 0 auto;
+       
+      }
+      .serv{
+        color: gold;
+      }
+      
+      .app{
+        color: purple;
+      }
+      .tut-p{
+        color: darkgray;
+        font-family: "poppins", sans-serif;
+        font-size: 15px;
+      }
+      .pp-tutor{
+        color: gold;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .tutor{
+        background-color: gold;
+        color: #fff;
+        width: 130px;
+        height: 40px;
+        border-radius: 2px;
+        box-shadow: 0 5px 5px rgb(147, 126, 10);
+        border: rgba(40, 35, 10, 0.744);
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+        font-size: 13px;
+        margin: 0 auto;
+      }
+      .applying-list{
+        font-size: 30px;
+        font-family: "Playfair Display", serif;
+        margin-top: 30px;
+        color: rgb(4, 4, 72);
+        text-align: center;
+      }
+      
+      .apply{
+        background-color: purple;
+        color: #fff;
+        width: 130px;
+        height: 40px;
+        box-shadow: 0 5px 5px purple;
+        border: rgba(128, 0, 128, 0.216);
+        border-radius: 2px;
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        margin: 0 auto;
+      }
+      
+      .app-p{
+        color: darkgray;
+        font-family: "poppins", sans-serif;
+      }
+      
+      
+      .pp-apply{
+        color: purple;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+   }
+@media (min-width: 481px) and (max-width: 768px) { /* Tablet */ }
+@media (min-width: 769px) { /* Desktop */ }

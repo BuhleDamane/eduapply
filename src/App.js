@@ -1,12 +1,12 @@
 import './App.css';
-import Heading from './heading'
+import Header from './header'
 import React from 'react';
+
 
 function App() {
   return (
     <div className="App">
-      <Heading />
-      
+      <Header />
     </div>
   );
 };
