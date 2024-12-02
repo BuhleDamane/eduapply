@@ -1,0 +1,228 @@
+
+  /* General Styles */
+.middle-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: rgb(4, 4, 72);
+    color: white;
+  }
+  
+  .bottom-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .lb {
+    width: 200px;
+    height: auto;
+  }
+  
+  .footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    color: gold;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Default for large screens */
+    gap: 5px;
+  }
+  
+  .footer-column li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: lightgray;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column li a:hover {
+    color: gold;
+  }
+  
+  .map {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .map-image {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+  }
+  /*-----------------------------------------bottom-footer-----------------------------------*/
+  .bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(3, 3, 42);
+  }
+  .TsCs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .TsCs ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 5px;
+  }
+  .TsCs ul li a{
+    text-decoration: none;
+  }
+  .TsCs ul li a:hover{
+    text-decoration: underline;
+  }
+  .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+  .social-links a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: gold;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .social-links a:hover{
+    color: purple;
+    transform: translateY(-5px);
+  }
+  
+  .social-links ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1px 5px;
+  }
+  
+  .copyright{
+    text-align: center;
+    background-color: rgb(2, 2, 29);
+    height: 36px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .heart{
+    color: gold;
+  }
+  @media (max-width: 480px) {
+    .middle-footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .bottom-logo,
+    .map {
+      display: none; /* Hide images on small screens */
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px; /* Add spacing between categories */
+    }
+  
+    .footer-column ul {
+      flex-direction: row; /* Arrange links in a row */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .footer-column li {
+      margin: 0 10px; /* Space between links */
+    }
+  
+    .footer-column h3 {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+      
+      /*-----------------------------------------bottom-footer-----------------------------------*/
+      .bottom-footer{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(3, 3, 42);
+      }
+      .TsCs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 7px;
+      }
+      .TsCs ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 5px;
+      }
+      .TsCs ul li a{
+        text-decoration: none;
+      }
+      .TsCs ul li a:hover{
+        text-decoration: underline;
+      }
+      .social-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 15px;
+      }
+      .social-links a{
+        text-decoration: none;
+        margin-right: 15px;
+        color: gold;
+        display: inline-block;
+        transition: transform 0.5s;
+      }
+      .social-links a:hover{
+        color: purple;
+        transform: translateY(-5px);
+      }
+      
+      .social-links ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 1px 5px;
+      }
+      
+      .copyright{
+        text-align: center;
+        background-color: rgb(2, 2, 29);
+        height: 36px;
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 10px;
+      }
+      .heart{
+        color: gold;
+      }
+   }
+  @media (min-width: 481px) and (max-width: 768px) { /* Tablet */ }
+  @media (min-width: 769px) { /* Desktop */ }

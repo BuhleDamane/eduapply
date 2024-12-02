@@ -102,7 +102,7 @@
       } 
       .image{
         position: relative;
-        display: block;
+        display: none;
        z-index: 1;
       }
       
@@ -114,11 +114,11 @@
           width: 0px; 
           height: 0px; 
           box-sizing: border-box;
-          display: block;
+          display: none;
       }
       
       .image:before {
-        display: block;
+        display: none;
           top: 0px;
           right: 0px;
           clip: rect(0, 520px, 220px, 0);
