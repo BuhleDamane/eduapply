@@ -32,16 +32,16 @@
   }
   
   .image:before {
-      top: 350px;
-      right: 57px;
+      top: 360px;
+      right: 60px;
       clip: rect(0, 520px, 220px, 0);
       border: 10px dotted gold;
       transform: translate(-18%, -49%) rotate(70deg);
   }
   
   .image:after {
-      bottom: -242px;
-      left: 238px;
+      bottom: -238px;
+      left: 240px;
       clip: rect(0, 520px, 220px, 0);
       border: 10px dotted purple; 
       transform: translate(-12%, -50%) rotate(250deg);

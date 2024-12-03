@@ -3,11 +3,10 @@
     margin-bottom: 30px;
   }
   .contact-left{
-    flex-basis: 35%;
-    margin-top: 70px;
+    flex-basis: 40%;
   }
   .contact-left h4{
-    margin-top: 55px;
+    margin-top: 15px;
     font-size: 35px;
     color: darkgray;
     font-family: "Playfair Display", serif;
