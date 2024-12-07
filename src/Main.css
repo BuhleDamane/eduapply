@@ -1,9 +1,10 @@
+
 .wrap{
     display: flex;
     
   }
   .intro{
-    padding: 110px 55px;
+    padding: 110px 85px;
   }
   .slogan-h1{
     margin-top: 70px;
@@ -268,11 +269,103 @@
   }
 
  }
-@media (min-width: 769px) { 
-  
+ @media (min-width: 760px) and (max-width: 1200px) {
+  .wrap {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .intro {
+    padding: 110px 55px;
+    text-align: center; /* Center the text content */
+  }
+
+  .slogan-h1 {
+    margin-top: 70px;
+    padding: 0 10px;
+    font-size: 65px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .slogan-p {
+    color: darkgray;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .image {
+    position: relative;
+    display: block;
+    z-index: 1;
+    margin: 0 auto; /* Center the image */
+  }
+
+  .image:before,
+  .image:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 56%; 
+    height: 96%; 
+    box-sizing: border-box;
+  }
+
+  .image:before {
+    top: 105px;
+    right: 10px;
+    clip: rect(0, 500px, 170px, 0);
+    border: 10px dotted gold;
+    transform: translate(-19%, -42%) rotate(70deg);
+  }
+
+  .image:after {
+    bottom: -122px;
+    left: 200px;
+    clip: rect(0, 800px, 190px, 0);
+    border: 10px dotted purple; 
+    transform: translate(-12%, -45%) rotate(250deg);
+  }
+
+  .cover {
+    width: 750px;
+    height: 550px;
+    padding: 60px 0 0 0;
+    display: block;
+    z-index: 1;
+    margin-top: -160px;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    margin-top: 60px; /* Space between the image and buttons */
+  }
+
+  .butt1, .butt2 {
+    background-color: gold;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .butt2 {
+    background-color: purple; /* Different color for the second button */
+  }
+}
+@media (min-width: 1210px) and (max-width: 1400px) {
+  .wrap{
+    display: flex;
+    
+  }
   .intro{
     padding: 110px 55px;
-    flex-basis: 100%;
   }
   .slogan-h1{
     margin-top: 70px;
@@ -288,44 +381,40 @@
     position: relative;
     display: block;
    z-index: 1;
-   flex-basis: 100%;
-   display: none;
   }
   
   .image:before,
   .image:after {
       content: '';
       position: absolute;
-      border-radius: 44%;
-      width: 58%; 
-      height: 79%; 
+      border-radius: 50%;
+      width: 60%; 
+      height: 72%; 
       box-sizing: border-box;
-     display: none;
   }
   
   .image:before {
-      top: 345px;
-      right: 230px;
-      clip: rect(0, 500px, 190px, 0);
+      top: 360px;
+      right: 60px;
+      clip: rect(0, 520px, 220px, 0);
       border: 10px dotted gold;
-      transform: translate(-10%, -50%) rotate(70deg);
+      transform: translate(-18%, -49%) rotate(70deg);
   }
   
   .image:after {
-      bottom: -13px;
-      left: 450px;
-      clip: rect(0, 500px, 220px, 0);
+      bottom: -145px;
+      left: 240px;
+      clip: rect(0, 520px, 220px, 0);
       border: 10px dotted purple; 
-      transform: translate(-20%, -50%) rotate(250deg);
+      transform: translate(-12%, -50%) rotate(250deg);
   }
   .cover{
-    width: 600px;
-    height: 400px;
+    width: 750px;
+    height: 550px;
     padding: 60px 0 0 0;
     display: block;
     z-index: 1;
     margin-top: 50px;
-    display: none;
   }
   
   .buttons{
@@ -354,5 +443,6 @@
     border-radius: 10px;
     font-family: "Playfair Display", serif;
   }
-
 }
+
+

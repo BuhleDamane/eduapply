@@ -324,4 +324,101 @@
         color: gold;
       }
    }
-  @media (min-width: 769px) { /* Desktop */ }
+  @media (min-width: 769px) { 
+    .middle-footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 5px;
+    }
+  
+    .bottom-logo,
+    .map {
+      display: none; /* Hide images on small screens */
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px; 
+    }
+  
+    .footer-column ul {
+      flex-direction: row; /* Arrange links in a row */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .footer-column li {
+      margin: 0 10px; 
+    
+    }
+  
+    .footer-column h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+      
+      /*-----------------------------------------bottom-footer-----------------------------------*/
+      .bottom-footer{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(3, 3, 42);
+      }
+      .TsCs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 10px;
+      }
+      .TsCs ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 5px;
+      }
+      .TsCs ul li a{
+        text-decoration: none;
+      }
+      .TsCs ul li a:hover{
+        text-decoration: underline;
+      }
+      .social-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 20px;
+      }
+      .social-links a{
+        text-decoration: none;
+        margin-right: 15px;
+        color: gold;
+        display: inline-block;
+        transition: transform 0.5s;
+      }
+      .social-links a:hover{
+        color: purple;
+        transform: translateY(-5px);
+      }
+      
+      .social-links ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 1px 5px;
+      }
+      
+      .copyright{
+        text-align: center;
+        background-color: rgb(2, 2, 29);
+        height: 36px;
+        color: #fff;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        font-size: 12px;
+      }
+      .heart{
+        color: gold;
+      }
+  }

@@ -38,8 +38,8 @@ export default function Services (){
                 <p className="tut-p">Excel in five subjects with our personalized tutoring programs for your academic success.</p>
                 <p className="pp-tutor">R650.00</p>
             </div>
-            <button className="tutor">Book Your Slot</button>
         </div>
+        <button className="tutor">Book Your Slot</button>
         </div>
         <div className="container">
         <h1 className="applying-list">Our application Services</h1>
@@ -68,8 +68,8 @@ export default function Services (){
                 <p className="app-p">Efficiently handle applications for up to 10 universities and NSFAS with our specialized service.</p>
                 <p className="pp-apply">R250.00</p>
             </div>
-           <button className="apply">Book Your Slot</button>
         </div>
+        <button className="apply">Book Your Slot</button>
         </div>
         </div>
         </div>
