@@ -179,18 +179,20 @@
     
   }
   .intro{
-    padding: 110px 55px;
+    align-items: center;
   }
   .slogan-h1{
     margin-top: 20px;
-    padding: 0 10px;
-    font-size: 45px;
+   text-align: center;
+    font-size: 50px;
     font-family: "Playfair Display", serif;
+    width: 100%;
   }
   .slogan-p{
     color: darkgray;
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
+    text-align: center;
   } 
   .image{
     position: relative;
@@ -238,6 +240,7 @@
   .buttons{
     margin-top: -100px;
     display: flex;
+    padding: 10px 50px;
   }
   .butt1{
     margin: 10px 5px;
@@ -249,7 +252,7 @@
     height: 45px;
     border-radius: 10px;
     font-family: "Playfair Display", serif;
-    font-size: 10px;
+    font-size: 13px;
   }
   .butt2{
     margin: 10px 20px;
@@ -261,8 +264,95 @@
     height: 45px;
     border-radius: 10px;
     font-family: "Playfair Display", serif;
-    font-size: 10px;
+    font-size: 13px;
   }
 
  }
-@media (min-width: 769px) { /* Desktop */ }
+@media (min-width: 769px) { 
+  
+  .intro{
+    padding: 110px 55px;
+    flex-basis: 100%;
+  }
+  .slogan-h1{
+    margin-top: 70px;
+    padding: 0 10px;
+    font-size: 65px;
+    font-family: "Playfair Display", serif;
+  }
+  .slogan-p{
+    color: darkgray;
+    font-family: "Poppins", sans-serif;
+  } 
+  .image{
+    position: relative;
+    display: block;
+   z-index: 1;
+   flex-basis: 100%;
+   display: none;
+  }
+  
+  .image:before,
+  .image:after {
+      content: '';
+      position: absolute;
+      border-radius: 44%;
+      width: 58%; 
+      height: 79%; 
+      box-sizing: border-box;
+     display: none;
+  }
+  
+  .image:before {
+      top: 345px;
+      right: 230px;
+      clip: rect(0, 500px, 190px, 0);
+      border: 10px dotted gold;
+      transform: translate(-10%, -50%) rotate(70deg);
+  }
+  
+  .image:after {
+      bottom: -13px;
+      left: 450px;
+      clip: rect(0, 500px, 220px, 0);
+      border: 10px dotted purple; 
+      transform: translate(-20%, -50%) rotate(250deg);
+  }
+  .cover{
+    width: 600px;
+    height: 400px;
+    padding: 60px 0 0 0;
+    display: block;
+    z-index: 1;
+    margin-top: 50px;
+    display: none;
+  }
+  
+  .buttons{
+    margin: 60px;
+    margin-top: -120px;
+  }
+  .butt1{
+    margin: 10px 20px;
+    background-color: gold;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+  }
+  .butt2{
+    margin: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+  }
+
+}
