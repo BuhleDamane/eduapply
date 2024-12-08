@@ -1,19 +1,3 @@
-body{
-  background-color: #fff;
-  
-}
-/* src/index.css or src/App.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 /* General Styles */
 * {
   margin: 0;
@@ -21,11 +5,21 @@ body{
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fff;
+}
+.info{
+  margin-left: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
+  background-color: blue; /* Main color scheme */
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +27,7 @@ nav {
   height: 70px;
   font-family: "Playfair Display", serif;
   z-index: 1000;
-  
+  padding: 0 20px;
 }
 
 .logo-container {
@@ -41,11 +35,25 @@ nav {
   align-items: center;
 }
 
-.info {
-  margin-left: 60px;
-  font-size: 30px;
-  font-weight: bold;
+.navbar-brand {
   color: gold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navbar-brand .spanb {
+  color: rgb(203, 29, 58);
+  font-size: 40px;
+}
+
+.navbar-brand .spand {
+  color: teal;
+  font-size: 40px;
+}
+
+.navbar-brand .spanfull {
+  color: rgb(203, 29, 58);
+  font-size: 50px;
 }
 
 .logo img {
@@ -55,37 +63,80 @@ nav {
   margin-top: 45px;
 }
 
+
 .navbar ul {
   display: flex;
   list-style: none;
-  font-size: 21px;
-
-}
-.navbar ul li{
-  display: inline-block;
-  list-style: none;
-
-}
-.navbar li {
-  margin: 0 30px;
 }
 
-.navbar a {
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 23px;
+  position: relative;
 }
 
-.navbar .bars,
-.navbar .cross {
+.navbar ul li a:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: gold;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s;
+}
+
+.bars {
   display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
 }
 
-/* Mobile View Adjustments */
+.cross {
+  display: none;
+  cursor: pointer;
+  color: white;
+  margin: 50px;
+  margin-right: -10px;
+}
 
+/* Mobile Menu Styles */
+.navbar.open ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: rgba(0, 0, 255, 0.369);
+  height: 35vh;
+  width: 150px;
+  padding-top: 20px;
+  color: gold;
+}
 
-@media (max-width: 480px) { /* Mobile */ }
-@media (min-width: 481px) and (max-width: 768px) { 
-  
- }
-@media (min-width: 769px) { /* Desktop */ }
+.navbar.open .cross {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
+@media (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar.open ul {
+    display: flex;
+  }
+}
