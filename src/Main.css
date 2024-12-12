@@ -1,10 +1,22 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .wrap{
     display: flex;
     
   }
   .intro{
-    padding: 110px 85px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 20px;
   }
   .slogan-h1{
     margin-top: 70px;
@@ -57,7 +69,7 @@
   }
   
   .buttons{
-    margin: 120px;
+   margin-left: 50px;
     margin-top: -120px;
     
   }
@@ -86,6 +98,17 @@
     font-size: 18px;
   }
   @media (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
     .wrap{
       display: flex;
       
@@ -142,7 +165,6 @@
       z-index: 1;
       margin-top: 50px;
     }
-    
    
     .butt1{
      
@@ -226,7 +248,7 @@
       
       .buttons{
         margin-top: -100px;
-        width: 150px;
+        width: 100px !important;
         height: 45px;
         
       }
@@ -258,9 +280,7 @@
     display: flex;
     
   }
-  .intro{
-    align-items: center;
-  }
+  
   .slogan-h1{
     margin-top: 20px;
    text-align: center;
